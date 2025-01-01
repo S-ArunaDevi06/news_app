@@ -42,7 +42,7 @@ Future<void> fetchNews(String category) async
   else if (category=='business')
     {
       print('FETCH NEWS WORKED!');
-      String apiKey = "abb1ce5856c2424f813454b7f1f9bd09";
+      String apiKey = "YOUR_API_KEY";
       String url = "http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=${apiKey}";
       final uri=Uri.parse(url);
       var response = await http.get(uri);
@@ -57,7 +57,7 @@ Future<void> fetchNews(String category) async
   else if (category=='sports')
   {
     print('FETCH NEWS WORKED!');
-    String apiKey = "abb1ce5856c2424f813454b7f1f9bd09";
+    String apiKey = "YOUR_API_KEY";
     String url = "http://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=${apiKey}";
     final uri=Uri.parse(url);
     var response = await http.get(uri);
@@ -73,7 +73,7 @@ Future<void> fetchNews(String category) async
   else if (category=='health')
   {
     print('FETCH NEWS WORKED!');
-    String apiKey = "abb1ce5856c2424f813454b7f1f9bd09";
+    String apiKey = "YOUR_API_KEY";
     String url = "http://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=${apiKey}";
     final uri=Uri.parse(url);
     var response = await http.get(uri);
