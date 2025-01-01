@@ -27,7 +27,7 @@ Future<void> fetchNews(String category) async
 {
   if (category==' '){
   print('FETCH NEWS WORKED!');
-  String apiKey = "abb1ce5856c2424f813454b7f1f9bd09";
+  String apiKey = YOUR_API_KEY;
   String url = "http://newsapi.org/v2/top-headlines?country=in&excludeDomains=stackoverflow.com&sortBy=publishedAt&language=en&apiKey=${apiKey}";
   final uri=Uri.parse(url);
   var response = await http.get(uri);
